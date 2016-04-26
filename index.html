@@ -20,14 +20,18 @@
   <body>
     
     <header>
-      <h1>The Code Review</h1>
+      <h1>THE CODE REVIEW</h1>
     </header>
     
     <main>
-      <h1>Sign up for our Newsletter</h1>
-      <h2>Get the latest on how your code is doing right in your inbox.</h2>
       
-      <hr class="double-line">
+      <div class="form-headings">
+        <h1>Sign up for our Newsletter</h1>
+        <h2>Get the latest on how your code is doing right in your inbox.</h2>
+      </div>
+      
+      <hr class="thick-line">
+      <hr class="thin-line"><!-- I don't know how to make 2 hr lines without using 2 hr tags-->
         
       <form action="index.html" method="post">           
       
@@ -103,15 +107,32 @@
           </div>
                   
         </fieldset>           
-      <hr>       
+      <hr class="normal-line">       
         <fieldset>   
               
           <legend>Newsletter</legend>  
           
-          <label>Select the newsletter you would like to receive</label>         
-          <input type="checkbox" id="html_news" value="html_newsletter" name="user_newsletter" required="required"><label for="html_news">HTML</label>          
-          <input type="checkbox" id="css_news" value="css_newsletter" name="user_newsletter" required="required"><label for="css_news">CSS</label>          
-          <input type="checkbox" id="javascript_news" value="javascript_newsletter" name="user_newsletter" required="required"><label for="javascript_news">JavaScript</label>
+          <label>Select the newsletter you would like to receive</label>
+          <div class="flex-row">   
+            <div class="col-1">      
+              <input type="checkbox" id="html_news" value="html_newsletter" name="user_newsletter" required="required">
+            </div>
+            <div class="col-2">  
+              <label for="html_news">HTML</label>
+            </div>
+            <div class="col-1">                     
+              <input type="checkbox" id="css_news" value="css_newsletter" name="user_newsletter" required="required">
+            </div>
+            <div class="col-2">  
+              <label for="css_news">CSS</label>   
+            </div>
+            <div class="col-1">       
+              <input type="checkbox" id="javascript_news" value="javascript_newsletter" name="user_newsletter" required="required">
+            </div>
+            <div class="col-2">  
+              <label for="javascript_news">JavaScript</label>
+            </div>
+          </div>
           
           <label>Newsletter Format</label>
           <input type="radio" id="html_format" value="html_format" name="user_format" required="required"><label for="html_format">HTML</label>      

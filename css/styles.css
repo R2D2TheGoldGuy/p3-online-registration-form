@@ -43,11 +43,13 @@ header {
 
 header h1 {
     color: white;
+    padding: 25px 0;
 }
 
 h1,
 h2 {
     text-align: center;
+    line-height: 1.75;
 }
 
 h1,
@@ -59,16 +61,36 @@ legend {
 
 h2 {
     margin-bottom: 2em; 
-    height: 10px;   
+    height: 10px;
+    color: darkgrey;
+    font-weight: 100;
+    font-size: 0.875em;   
 }
 
 fieldset {
     border: none;
 }
+
 label {
     color: #1d2f3e;
     display: block;
     margin-bottom: 1em;
+}
+
+legend {
+    margin: 1.5em 0;    
+}
+
+/* ============================== 
+Main Section 
+============================== */
+
+main {
+    background:#feffff;
+}
+
+.form-headings {
+    margin: 60px auto;
 }
 
 /* ============================== 
@@ -79,7 +101,19 @@ hr {
     /* position: relative; */
     height: 6px;
     background: #1d2f3e;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
+    border: none;
+}
+
+hr.thick-line {
+    margin-bottom: -4px;
+}
+hr.thin-line {
+    height: 3px;
+}
+thick-line,
+thin-line {
+    margin: 10px 0;
 }
 
 /* .double-line:after {
@@ -128,17 +162,41 @@ select:focus, textarea:focus {
 Radio & Checkbox Input Styles 
 ============================== */
 
-input[type="checkbox"],
+/* input[type="checkbox"],
 input[type="radio"] {
-      
+
+} */
+
+/* ============================== 
+Footer
+============================== */
+
+footer {
+    text-align: center;
+    margin-bottom: 170px;
 }
 
-@media screen and (min-width: 480px) {
-   
-
+@media screen and (min-width: 768px) {
+    
+   	.col-1 {
+		float: left;
+		width: 25%;       
+	}
+	.col-2 {
+		width: 75%;
+		float: left;    
+	}
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1024px) {
+    
+	body {
+		font-size: 1.125em;
+	}
+
+	main {
+		max-width: 720px;
+	}
       
   
 
