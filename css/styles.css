@@ -1,0 +1,145 @@
+/* ============================== 
+Container
+============================== */
+
+main { /* Container */
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 1em; /* Mobile Display */
+}
+
+/* ==============================
+Base/Global Styles
+============================== */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    overflow-y: scroll;
+}
+
+h1, h2, p,
+fieldset, input, textarea,
+select, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: ghostwhite;
+    color: #ccc;
+    font: 1em/1.5 'Merriweather', serif;
+}
+
+header {
+    background: #1d2f3e;    
+    margin-bottom: 2em;
+}
+
+header h1 {
+    color: white;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h1,
+h2,
+legend {
+    color: #1d2f3e; /* #2d3945 */
+    font-size: 1.125em;   
+}
+
+h2 {
+    margin-bottom: 2em; 
+    height: 10px;   
+}
+
+fieldset {
+    border: none;
+}
+label {
+    color: #1d2f3e;
+    display: block;
+    margin-bottom: 1em;
+}
+
+/* ============================== 
+Horizontal Rules 
+============================== */
+
+hr {
+    /* position: relative; */
+    height: 6px;
+    background: #1d2f3e;
+    margin-bottom: 2em;
+}
+
+/* .double-line:after {
+    
+} */
+
+/* ============================== 
+Input Styles 
+============================== */
+
+/* button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+} */
+
+input, 
+select, 
+textarea {
+    background: #eff0f1;
+    color: #1d2f3e;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: border-color 1.2s;
+    margin-bottom: 2em;
+}
+
+button {
+	background: #3fb0ac;
+	color: white;
+    width: 100%;
+	border: 2px solid transparent;
+	border-radius: 3px;
+    font-size: 1.125em;
+    margin-bottom: 2em;
+	padding: 1em;
+}
+button:focus, input:focus,
+select:focus, textarea:focus {
+	border-color: #46698b; /* Changing the focus state color */
+    outline: 0; /* Removes the default outline focus */
+}
+
+/* ============================== 
+Radio & Checkbox Input Styles 
+============================== */
+
+input[type="checkbox"],
+input[type="radio"] {
+      
+}
+
+@media screen and (min-width: 480px) {
+   
+
+}
+
+@media screen and (min-width: 769px) {
+      
+  
+
+}
