@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     
     <!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' 
-    rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
     
     <!-- My Styles -->
     <link rel="stylesheet" href="css/styles.css">
@@ -107,36 +106,26 @@
           </div>
                   
         </fieldset>           
-      <hr class="normal-line">       
+        
+      <hr class="normal-line">     
+        
         <fieldset>   
               
           <legend>Newsletter</legend>  
           
-          <label>Select the newsletter you would like to receive</label>
-          <div class="flex-row">   
-            <div class="col-1">      
-              <input type="checkbox" id="html_news" value="html_newsletter" name="user_newsletter" required="required">
-            </div>
-            <div class="col-2">  
-              <label for="html_news">HTML</label>
-            </div>
-            <div class="col-1">                     
-              <input type="checkbox" id="css_news" value="css_newsletter" name="user_newsletter" required="required">
-            </div>
-            <div class="col-2">  
-              <label for="css_news">CSS</label>   
-            </div>
-            <div class="col-1">       
-              <input type="checkbox" id="javascript_news" value="javascript_newsletter" name="user_newsletter" required="required">
-            </div>
-            <div class="col-2">  
-              <label for="javascript_news">JavaScript</label>
-            </div>
-          </div>
+          <label>Select the newsletter you would like to receive</label>    
+          <input type="checkbox" id="html_news" value="html_newsletter" name="user_newsletter" 
+          required="required"><label for="html_news">HTML</label>                   
+          <input type="checkbox" id="css_news" value="css_newsletter" name="user_newsletter" 
+          required="required"><label for="css_news">CSS</label>          
+          <input type="checkbox" id="javascript_news" value="javascript_newsletter" name="user_newsletter" 
+          required="required"><label for="javascript_news">JavaScript</label>
           
           <label>Newsletter Format</label>
-          <input type="radio" id="html_format" value="html_format" name="user_format" required="required"><label for="html_format">HTML</label>      
-          <input type="radio" id="text_format" value="text_format" name="user_format" required="required"><label for="text_format">Plain Text</label>
+          <input type="radio" id="html_format" value="html_format" name="user_format" 
+          required="required"><label for="html_format">HTML</label>      
+          <input type="radio" id="text_format" value="text_format" name="user_format" 
+          required="required"><label for="text_format">Plain Text</label>
           
           <label>Other topics you'd like to hear about</label>
           <textarea id="input" user="user_input"></textarea>         
@@ -148,7 +137,7 @@
     </main>
     
     <footer>
-      <p>Copyright The Code Review</p>
+      <span>Copyright The Code Review</span>
     </footer>
     
   </body>
