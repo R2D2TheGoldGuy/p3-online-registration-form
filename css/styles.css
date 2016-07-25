@@ -32,14 +32,15 @@ button {
 }
 
 body {
-    background  : #e8edf3;
+    background  : url(../img/background.png);
     color       : #ccc;
     font        : 1em/1.5 'Merriweather', serif;
 }
 
 header {
-    background     : #1d2f3e;
-    margin-bottom  : 3em;
+    background     : #89965A;
+    border-bottom  : 5px solid white;
+    margin-bottom  : 130px;
 }
 
 header h1 {
@@ -88,6 +89,7 @@ Main Section
 
 main {
     background:#feffff;
+    box-shadow: 1px 1px 20px #0D0C14;
     border-radius: 8px;
     padding-top: 10px;
 }
@@ -146,14 +148,12 @@ button {
     font-size      : 1.125em;
     margin         : 2em 0;
 	padding        : 1em;
-    transition     : all 0.5s;
+    transition     : all 0.66s;
 }
 button:hover {   
     background     : #4ebbb5;
+    opacity        : 0.75;
     color          : white;
-    border-bottom  : 8px solid #12f6e9;
-    border-radius  : 8px;
-    transform      : scale(1.01);
 }
 button:focus, input:focus,
 select:focus, textarea:focus {
