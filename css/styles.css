@@ -118,10 +118,6 @@ hr.thin-line {
     height: 2px;
 }
 
-/* .double-line:after {
-
-} */
-
 /* ==============================
 Input Styles
 ============================== */
@@ -195,7 +191,7 @@ input[type="checkbox"] + label:before {
 	vertical-align  : middle;
 	transition      : border-color 1s;
     margin-right    : 1em;
-    top             : -4px;
+    top             : 0px !important;
 }
 
 /* Step 5 */
@@ -220,7 +216,7 @@ input[type="radio"] + label:after {
 	width          : 10px;
 	height         : 10px;
 	background     : #1d2f3e;
-    top            : 5px;
+    top            : 7px !important;
     left           : 5px;
 }
 
@@ -231,7 +227,7 @@ input[type="checkbox"]:checked + label:after {
     font-size    : 1em;
 	position     : absolute;
 	left         : 3px;
-	top          : -2px;
+	top          : 1px !important;
 }
 
 /* Step 10  - Hover State Border */
@@ -263,20 +259,20 @@ footer {
     }
     
     .form-headings {
-        font-size: 1.125em;
-        margin-bottom: 60px;
+        font-size      : 1.125em;
+        margin-bottom  : 60px;
     }
 
     /* Input Form Cells - Desktop Version */
     .col-1 {
-        width  : 25%;
+        width: 25%;
     }	
     .col-2 {
-        width  : 75%;
+        width: 75%;
     }   
     .col-1,
     .col-2 { 
-		float  : left;
+		float: left;
 	}
 }
 
@@ -289,10 +285,9 @@ footer {
     h1 {
         font-size: 1.5em;
     }
-
+    
     input[type="radio"] + label:after {
-        top   : 6px;
-        left  : 5px;
+        top: 9px !important;
     }
     
     main {
