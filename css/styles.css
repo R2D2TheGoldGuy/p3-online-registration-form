@@ -32,20 +32,22 @@ button {
 }
 
 body {
-    background  : url(../img/background.png);
+    background  : url(../img/weather.png);
     color       : #ccc;
-    font        : 1em/1.5 'Merriweather', serif;
+    font        : 1em/1.5 'Viga', sans-serif;
 }
 
 header {
-    background     : #89965A;
-    border-bottom  : 5px solid white;
-    margin-bottom  : 130px;
+    background     : #3fb0ac;
+    border-bottom  : 3px solid #6ed3cf;
+    margin-bottom  : 70px;
+    box-shadow     : 0px 2px 10px #6ed3cf;
 }
 
 header h1 {
-    color    : white;
-    padding  : 25px 0;
+    color        : white;
+    text-shadow  : 1px 1px 6px #0D0C14;
+    padding      : 25px 0;
 }
 
 h1,
@@ -89,8 +91,7 @@ Main Section
 
 main {
     background:#feffff;
-    box-shadow: 1px 1px 20px #0D0C14;
-    border-radius: 8px;
+    box-shadow: 1px 1px 20px #318E88;
     padding-top: 10px;
 }
 
@@ -128,7 +129,7 @@ Input Styles
 input,
 select,
 textarea {
-    background     : #eff0f1;
+    background     : #E3E6ED;
     color          : #1d2f3e;
     width          : 100%;
     border         : 2px solid transparent;
@@ -244,7 +245,7 @@ Footer
 ============================== */
 
 footer {
-    background  : #1d2f3e;
+    background  : #3fb0ac;
     color       : white;
     text-align  : center;
     margin      : 170px 0 0;
@@ -256,6 +257,10 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    
+    main {
+        border-radius: 8px;
+    }
     
     .form-headings {
         font-size: 1.125em;
@@ -276,6 +281,14 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+
+    header {
+        margin-bottom  : 130px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
 
     input[type="radio"] + label:after {
         top   : 6px;
