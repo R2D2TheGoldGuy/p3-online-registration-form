@@ -32,22 +32,24 @@ button {
 }
 
 body {
-    background  : url(../img/weather.png);
+    background  : url(../img/congruent_pentagon.png);
     color       : #ccc;
     font        : 1em/1.5 'Viga', sans-serif;
 }
 
 header {
-    background     : #3fb0ac;
-    border-bottom  : 3px solid #6ed3cf;
+    background     : #0AAD97;
+    border-bottom  : 8px solid #079B87;
     margin-bottom  : 70px;
-    box-shadow     : 0px 2px 10px #6ed3cf;
 }
 
 header h1 {
     color        : white;
-    text-shadow  : 1px 1px 6px #0D0C14;
+    text-shadow  : 1px 1px 1px #0D0C14;
     padding      : 25px 0;
+}
+.main-title {
+    font-size: 1.625em;
 }
 
 h1,
@@ -91,7 +93,7 @@ Main Section
 
 main {
     background:#feffff;
-    box-shadow: 1px 1px 20px #318E88;
+    box-shadow: 1px 1px 20px #666;
     padding-top: 10px;
 }
 
@@ -125,37 +127,37 @@ Input Styles
 input,
 select,
 textarea {
-    background     : #E3E6ED;
-    color          : #1d2f3e;
-    width          : 100%;
-    border         : 2px solid transparent;
-    border-radius  : 4px;
-    margin-bottom  : 2em;
-    padding        : 10px;
-    transition     : border-color 1s;
+  background     : #E3E6ED;
+  color          : #1d2f3e;
+  width          : 100%;
+  border         : 2px solid transparent;
+  border-radius  : 4px;
+  margin-bottom  : 2em;
+  padding        : 10px;
+  transition     : border-color 1s;
 }
 
 button {
 	background     : #3fb0ac;
 	color          : ghostwhite;
-    width          : 100%;
-    border         : none;
+  width          : 100%;
+  border         : none;
 	border-bottom  : 6px solid #6ed3cf;
 	border-radius  : 4px;
-    font-size      : 1.125em;
-    margin         : 2em 0;
+  font-size      : 1.125em;
+  margin         : 2em 0;
 	padding        : 1em;
-    transition     : all 0.66s;
+  transition     : all 0.66s;
 }
-button:hover {   
-    background     : #4ebbb5;
-    opacity        : 0.75;
-    color          : white;
+button:hover {
+  background     : #4ebbb5;
+  opacity        : 0.75;
+  color          : white;
 }
 button:focus, input:focus,
 select:focus, textarea:focus {
 	border-color  : #46698b; /* Changing the focus state color */
-    outline       : 0; /* Removes the default outline focus */
+  outline       : 0; /* Removes the default outline focus */
 }
 
 /* ==============================
@@ -185,46 +187,46 @@ input[type="checkbox"]:checked + label:after {
 /* Step 4 */
 input[type="radio"   ] + label:before,
 input[type="checkbox"] + label:before {
-    background      : #e1e8f0;
+  background      : #e1e8f0;
 	position        : relative;
 	display         : inline-block;
 	vertical-align  : middle;
 	transition      : border-color 1s;
-    margin-right    : 1em;
-    top             : 0px !important;
+  margin-right    : 1em;
+  top             : 0px !important;
 }
 
 /* Step 5 */
 input[type="checkbox"] + label:before,
 input[type="radio"] + label:before {
-    border         : 2px solid transparent;
-    width          : 20px;
+  border         : 2px solid transparent;
+  width          : 20px;
 	height         : 20px;
 }
 input[type="checkbox"] + label:before {
 	border-radius  : 4px;
 }
 input[type="radio"] + label:before {
-    border-radius  : 100%;
-    left           : 0;
+  border-radius  : 100%;
+  left           : 0;
 }
 
 /* Step 6 */
 input[type="radio"] + label:after {
-    border-radius  : 100%;
+  border-radius  : 100%;
 	position       : absolute; /* Tick appears when clicked */
 	width          : 10px;
 	height         : 10px;
 	background     : #1d2f3e;
-    top            : 7px !important;
-    left           : 5px;
+  top            : 7px !important;
+  left           : 5px;
 }
 
 /* Step 7 - Hover State Tick for Checkboxes */
 input[type="checkbox"]:checked + label:after {
 	content      : '✓';
-    font-weight  : bold;
-    font-size    : 1em;
+  font-weight  : bold;
+  font-size    : 1em;
 	position     : absolute;
 	left         : 3px;
 	top          : 1px !important;
@@ -241,7 +243,7 @@ Footer
 ============================== */
 
 footer {
-    background  : #3fb0ac;
+    background  : #0AAD97;
     color       : white;
     text-align  : center;
     margin      : 170px 0 0;
@@ -253,11 +255,15 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-    
+
+    .main-title {
+        font-size: 1.75em;
+    }
+
     main {
         border-radius: 8px;
     }
-    
+
     .form-headings {
         font-size      : 1.125em;
         margin-bottom  : 60px;
@@ -266,17 +272,21 @@ footer {
     /* Input Form Cells - Desktop Version */
     .col-1 {
         width: 25%;
-    }	
+    }
     .col-2 {
         width: 75%;
-    }   
+    }
     .col-1,
-    .col-2 { 
+    .col-2 {
 		float: left;
 	}
 }
 
 @media screen and (min-width: 1024px) {
+
+    .main-title {
+        font-size: 2em;
+    }
 
     header {
         margin-bottom  : 130px;
@@ -285,11 +295,11 @@ footer {
     h1 {
         font-size: 1.5em;
     }
-    
+
     input[type="radio"] + label:after {
         top: 9px !important;
     }
-    
+
     main {
 		max-width: 800px;
         padding-top: 10px;
@@ -297,7 +307,7 @@ footer {
     .form-headings {
         margin: 40px auto 65px;
     }
-    
+
 	body {
 		font-size: 1.125em;
 	}
