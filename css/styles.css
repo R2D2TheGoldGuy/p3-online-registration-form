@@ -32,7 +32,7 @@ button {
 }
 
 body {
-    background  : url('../img/background.jpg');
+    background  : url('../img/background.jpg') repeat;
     font        : 1em/1.5 'Roboto', sans-serif;
 }
 
